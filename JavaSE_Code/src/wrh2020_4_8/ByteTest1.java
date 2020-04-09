@@ -1,4 +1,5 @@
-package wrh2020_4_8;
+p}
+        ackage wrh2020_4_8;
 
 public class ByteTest1 {
     public static void main(String[] args) {
@@ -9,4 +10,3 @@ public class ByteTest1 {
         System.out.println("开心");
     }
 
-}
