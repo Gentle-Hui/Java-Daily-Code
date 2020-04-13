@@ -7,6 +7,7 @@ public class NewTest {
             Prime(a);
         }
     }
+
     private static void Prime(int a) {
         int b = 0;
         for (b = 2; b < a; b++) {
@@ -18,6 +19,4 @@ public class NewTest {
             System.out.println(a);
         }
     }
-
-
 }
