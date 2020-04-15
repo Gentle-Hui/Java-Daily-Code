@@ -5,6 +5,11 @@ public class ByteTest {
             System.out.println(array[i]);
 
         }
+
+        for(int val : array){
+
+            System.out.println(val+" ");
+        }
     }
 
 }
