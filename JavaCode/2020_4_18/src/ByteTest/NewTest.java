@@ -12,5 +12,8 @@ public class NewTest {
     public void setI(int a){
         i=a;
     }
+    public void getI(){
+
+    }
 
 }
