@@ -9,5 +9,6 @@ public class TestDemo {
         }
         myArrayList.display();
         myArrayList.getPos(4);
+        System.out.println( myArrayList.getPos(4));
     }
 }

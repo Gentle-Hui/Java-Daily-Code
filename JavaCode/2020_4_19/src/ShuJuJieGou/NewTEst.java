@@ -34,7 +34,7 @@ public class NewTEst {
     //打印顺序表
     public void display() {
         for (int i = 0; i < this.usedSize; i++) {
-            System.out.print(this.elem[i]+" ");
+            System.out.print(this.elem[i] + " ");
         }
 
     }
@@ -50,10 +50,10 @@ public class NewTEst {
         return false;
     }
 
-    //
+    // 查找某个元素对应的位置
     public int search(int toFind) {
         for (int i = 0; i < this.usedSize; i++) {
-            if (this.elem[i] == toFind) {
+            if(this.elem[i] == toFind) {
                 return i;
             }
         }
@@ -65,30 +65,39 @@ public class NewTEst {
     private boolean isEmpty() {
         return this.usedSize == 0;
     }
-    public int getPos(int pos) {
-        //1.判断是否为空
-        if (isEmpty()) {
-            return -1;
-        }
-        //2.pos合法性
-        if (pos < 0 || pos >= this.usedSize) {
 
+    public int getPos(int pos) {
+        //1、顺序表是否为空   -1
+        if (isEmpty()) {
+            throw new RuntimeException("顺序表为空！");//手动抛出异常
         }
-        return elem[pos];
+        //2、pos 合法性
+        if (pos < 0 || pos >= this.usedSize) {
+            throw new RuntimeException("pos位置不合法!");
+        }
+        return this.elem[pos];
     }
 
     //获取顺序表长度
     public int size() {
         return usedSize;
     }
-//删除第一次出现的关键字toRemove
-    public void remove(int toRemove){
 
+    //删除第一次出现的关键字toRemove
+    public void remove(int toRemove) {
+        int index = search(toRemove);
+        if (index == 1) {
+            System.out.println("没有需要删除的数字");
+            return;
+        }
+        for (int i = index; i < this.usedSize - 1; i++) {
+            this.elem[i] = this.elem[i + 1];
+        }
+        this.usedSize--;
     }
 
-
-
-
-
-
+    //清除顺序表
+    public void clear() {
+        this.usedSize = 0;
+    }
 }
