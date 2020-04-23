@@ -6,5 +6,12 @@ package ByteTest;
  * @author: 温荣辉
  * @create: 2020-04-22 23:09
  **/
-public class NewTest {
+public class NewTest  {
+    public static void main(String[] args) {
+
+
+
+    }
+
+    
 }

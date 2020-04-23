@@ -3,19 +3,20 @@ package ShuJuJieGou;
 import java.util.Arrays;
 
 public class NewTEst {
+    //成员变量
     private int[] elem;//数组
     private int usedSize;//有效的数据个数
     private static final int intCapacity = 10;//初始容量
     private int length;
 
-
+    //构造方法
     public NewTEst() {
         this.length = length;
         this.elem = new int[intCapacity];
         this.usedSize = 0;
     }
 
-
+    //成员方法
     //插入元素
     public void add(int pos, int data) {
 
@@ -53,7 +54,7 @@ public class NewTEst {
     // 查找某个元素对应的位置
     public int search(int toFind) {
         for (int i = 0; i < this.usedSize; i++) {
-            if(this.elem[i] == toFind) {
+            if (this.elem[i] == toFind) {
                 return i;
             }
         }
