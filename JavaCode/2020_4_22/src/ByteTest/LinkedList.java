@@ -44,6 +44,9 @@ public class LinkedList {
     //尾插法
     public void addLast(int data) {
         Node node=new Node(data);
+        if(this.head==null){
+
+        }
 
     }
 
