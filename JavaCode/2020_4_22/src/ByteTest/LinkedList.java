@@ -45,7 +45,8 @@ public class LinkedList {
     public void addLast(int data) {
         Node node=new Node(data);
         if(this.head==null){
-
+            this.head=node;
+            return;
         }
 
     }
