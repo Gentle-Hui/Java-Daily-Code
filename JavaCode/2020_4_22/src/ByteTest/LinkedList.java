@@ -49,11 +49,11 @@ public class LinkedList {
             this.head = node;
             return;
         }
-        Node cur=this.head;
-        while(cur.next!=null){
-            cur=cur.next;
+        Node cur = this.head;
+        while (cur.next != null) {
+            cur = cur.next;
         }//发现最后一个节点存的地址为空，就把我们新建的node连上去。
-        cur.next=node;
+        cur.next = node;
     }
 
     //任意位置插入，第一个节点为0号下表
@@ -64,15 +64,13 @@ public class LinkedList {
 
     //查找是否包含关键字key
     public boolean contains(int key) {
-        Node cur=this.head;
-        while(cur!=null){
-            if(cur.data==key){
-                System.out.println("包含");
+        Node cur = this.head;
+        while (cur != null) {
+            if (cur.data == key) {
                 return true;
             }
-            cur=cur.next;
+            cur = cur.next;
         }
-        System.out.println("不包含");
         return false;
     }
 
@@ -88,8 +86,13 @@ public class LinkedList {
 
     //单链表的长度
     public int size() {
-
-        return 0;
+        int count = 0;
+        Node cur = this.head;
+        while (cur != null) {
+            count++;
+            cur = cur.next;
+        }
+        return count;
     }
 
     //遍历
