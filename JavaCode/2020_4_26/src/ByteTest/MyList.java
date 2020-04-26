@@ -24,7 +24,7 @@ public class MyList {
     public void display() {
         Node cur = this.head;
         while (cur != null) {//从根节点由前向后输出
-            System.out.println(cur.data + " ");
+            System.out.print(cur.data + " ");
             cur = cur.next;
         }
         System.out.println();
@@ -115,4 +115,5 @@ public class MyList {
         cur.prev.next = node;
         cur.prev = node;
     }
+    //
 }

@@ -81,6 +81,11 @@ public class LinkedList {
 
     //遍历
     public void display() {
+        Node cur=this.head;
+        while(cur!=null){
+            System.out.print(cur.data+" ");
+            cur=cur.next;
+        }
 
     }
 
