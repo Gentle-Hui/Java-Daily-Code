@@ -21,6 +21,7 @@ public class NewTest {
         myList.addLast(5);
         myList.addLast(6);
         myList.display();
+        myList.contains(4);
     }
 
 

@@ -52,7 +52,7 @@ public class LinkedList {
         Node cur=this.head;
         while(cur.next!=null){
             cur=cur.next;
-        }
+        }//发现最后一个节点存的地址为空，就把我们新建的node连上去。
         cur.next=node;
     }
 
@@ -62,10 +62,18 @@ public class LinkedList {
         return true;
     }
 
-    //查找是否包含关键字key是否在单链表中
+    //查找是否包含关键字key
     public boolean contains(int key) {
-
-        return true;
+        Node cur=this.head;
+        while(cur!=null){
+            if(cur.data==key){
+                System.out.println("包含");
+                return true;
+            }
+            cur=cur.next;
+        }
+        System.out.println("不包含");
+        return false;
     }
 
     //删除第一次出现关键字key的节点
@@ -91,6 +99,7 @@ public class LinkedList {
             System.out.print(cur.data + " ");
             cur = cur.next;
         }
+        System.out.println();
     }
 
     //清空
