@@ -32,9 +32,9 @@ public class LinkedList {
     //头插法
     public void addFirst(int data) {
         Node node = new Node(data);//这句代码就实现了一个不确定地址，next为空，存在数据的节点
-        if(this.head==null){
+        if (this.head == null) {
             //如果第一次插入节点
-            this.head=node;
+            this.head = node;
             return;
         }
         node.next = this.head;
@@ -43,12 +43,17 @@ public class LinkedList {
 
     //尾插法
     public void addLast(int data) {
-        Node node=new Node(data);
-        if(this.head==null){
-            this.head=node;
+        Node node = new Node(data);
+        if (this.head == null) {
+            //如果第一次插入节点
+            this.head = node;
             return;
         }
-
+        Node cur=this.head;
+        while(cur.next!=null){
+            cur=cur.next;
+        }
+        cur.next=node;
     }
 
     //任意位置插入，第一个节点为0号下表
@@ -81,12 +86,11 @@ public class LinkedList {
 
     //遍历
     public void display() {
-        Node cur=this.head;
-        while(cur!=null){
-            System.out.print(cur.data+" ");
-            cur=cur.next;
+        Node cur = this.head;
+        while (cur != null) {
+            System.out.print(cur.data + " ");
+            cur = cur.next;
         }
-
     }
 
     //清空
