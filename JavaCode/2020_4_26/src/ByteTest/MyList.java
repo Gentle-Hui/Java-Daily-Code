@@ -117,6 +117,6 @@ public class MyList {
     }
     //清除
     public void clear(){
-        Node cur=this.head.
+        Node cur=this.head.prev;
     }
 }
