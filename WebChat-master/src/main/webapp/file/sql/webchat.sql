@@ -64,4 +64,3 @@ CREATE TABLE `user` (
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('Amayadream', '123456', 'Amayadream', '1', '23', 'upload/Amayadream/Amayadream.jpg', 'are you ok?', '2017-01-11 19:22:21', '2017-01-11 19:22:21', '1');
-INSERT INTO `user` VALUES ('admin', 'admin', 'admin', '1', '23', 'upload/admin/admin.jpg', 'i\'m admin', '2017-01-11 19:22:21', '2017-01-11 19:23:20', '1');
