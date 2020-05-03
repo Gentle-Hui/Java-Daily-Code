@@ -8,7 +8,7 @@ import javax.servlet.ServletContextEvent;
 /**
  * 将JDK自带的jul日志桥接到log4j中,使得启动日志被log4j接管
  * @author :  Amayadream
- * @date :  2016.04.06 17:12
+ * @date :
  */
 public class LoggerListener extends Log4jConfigListener {
 
