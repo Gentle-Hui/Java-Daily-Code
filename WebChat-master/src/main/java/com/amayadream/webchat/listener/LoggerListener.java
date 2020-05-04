@@ -1,7 +1,7 @@
 package com.amayadream.webchat.listener;
 
 import org.slf4j.bridge.SLF4JBridgeHandler;
-import org.springframework.web.util.Log4jConfigListener;
+import org.apache.logging.log4j.web.Log4jServletContextListener;
 
 import javax.servlet.ServletContextEvent;
 
@@ -10,7 +10,7 @@ import javax.servlet.ServletContextEvent;
  * @author :  Amayadream
  * @date :
  */
-public class LoggerListener extends Log4jConfigListener {
+public class LoggerListener extends Log4jServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent event) {
